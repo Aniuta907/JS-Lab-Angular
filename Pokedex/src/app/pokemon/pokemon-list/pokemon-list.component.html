@@ -10,6 +10,6 @@
 
 <div *ngIf="textView">
   <ng-container *ngFor="let pokemon of pokemons" class="pokText">
-      <app-pokemon-text></app-pokemon-text>
+      <app-pokemon-text [pokemon]="pokemon"></app-pokemon-text>
   </ng-container>
 </div>

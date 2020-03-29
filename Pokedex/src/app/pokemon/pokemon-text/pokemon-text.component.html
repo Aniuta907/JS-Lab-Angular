@@ -1,3 +1,8 @@
 <div>
-    <p>Name</p>
+    <p>Name: {{pokemon.name}}, id: {{pokemon.id}}, damage: {{pokemon.damage}}</p>
+    <div>
+        <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
+          {{ caught ? "Release" : "Catch" }}
+        </button>
+      </div>
 </div>
