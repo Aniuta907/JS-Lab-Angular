@@ -1,5 +1,5 @@
-<div>
-    <p>Name: {{pokemon.name}}, id: {{pokemon.id}}, damage: {{pokemon.damage}}</p>
+<div [appRedBorder]="pokemon.damage" class="pokCard">
+    <p>name: {{pokemon.name}}, id: {{pokemon.id}}, damage: {{pokemon.damage}}</p>
     <div>
         <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
           {{ caught ? "Release" : "Catch" }}

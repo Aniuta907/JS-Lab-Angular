@@ -6,6 +6,7 @@ import { PokemonPageComponent } from './pokemon-page/pokemon-page.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { PokemonTextComponent } from './pokemon-text/pokemon-text.component';
+import { RedBorderDirective } from './directives/pokemon-card-border.directive';
 
 @NgModule({
 	declarations: [
@@ -14,7 +15,8 @@ import { PokemonTextComponent } from './pokemon-text/pokemon-text.component';
 		PokemonPageComponent,
 		PokemonListComponent,
 		PaginationComponent,
-		PokemonTextComponent
+		PokemonTextComponent,
+		RedBorderDirective
 	],
 	imports: [ CommonModule ],
 	exports: [
