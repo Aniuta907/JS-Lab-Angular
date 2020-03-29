@@ -1,0 +1,18 @@
+.pokList {
+    display: flex;
+	flex-wrap: wrap;
+	padding-left: 1%;
+	padding-right: 0.5%;
+	padding-bottom: 1%;
+}
+
+.pokCard {
+	margin: 5px;
+}
+
+.switchBtn{
+	margin-left: 45%;
+	margin-top: 0.5%;
+	background-color: rgb(111, 223, 186);
+	border: rgb(111, 223, 186);
+}
