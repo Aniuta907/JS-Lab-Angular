@@ -1,0 +1,57 @@
+.pokText {
+	color: #01796f;
+}
+
+.pokiImg {
+    width: 300px;
+}
+
+.divImg {
+    min-height: 500px;
+    max-height: 500px;
+	width: 350px;
+	outline: 2px solid Aquamarine;
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.divAll {
+    max-width: 800px;
+    min-height: 500px;
+	align-items: center;
+	vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 50px;
+	padding-top: 20px;
+}
+
+.divName {
+    width: 400px;
+    max-height: 70px;
+	align-items: center;
+	vertical-align: middle;
+	margin-top: 5px;
+	padding-top: 20px;
+}
+
+.divInf {
+    width: 400px;
+    max-height: 200px;
+	align-items: center;
+	vertical-align: middle;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.cardPok {
+	padding-left: 3%;
+}
+
+.catchBtn {
+    margin-top: 40px;
+    width: 150px;
+    height: 50px;
+	background-color: rgb(111, 223, 186);
+	border: rgb(111, 223, 186);
+}
