@@ -8,6 +8,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { PokemonTextComponent } from './pokemon-text/pokemon-text.component';
 import { RedBorderDirective } from './directives/pokemon-card-border.directive';
 import { PokemonService } from './services/pokemon.service';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
 	declarations: [
@@ -17,7 +18,8 @@ import { PokemonService } from './services/pokemon.service';
 		PokemonListComponent,
 		PaginationComponent,
 		PokemonTextComponent,
-		RedBorderDirective
+		RedBorderDirective,
+		SearchBarComponent
 	],
 	imports: [ CommonModule ],
 	exports: [
@@ -26,7 +28,8 @@ import { PokemonService } from './services/pokemon.service';
 		PokemonCardComponent,
 		PokemonListComponent,
 		PaginationComponent,
-		PokemonTextComponent
+		PokemonTextComponent,
+		SearchBarComponent
 	],
 	providers: [PokemonService]
 })

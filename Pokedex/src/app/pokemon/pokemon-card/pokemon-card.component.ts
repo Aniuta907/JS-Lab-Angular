@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-import { Pokemon } from '../pokemon-list/pokemon-list.component';
+import { Pokemon } from '../services/pokemon.service';
 
 @Component({
 	selector: 'app-pokemon-card',
