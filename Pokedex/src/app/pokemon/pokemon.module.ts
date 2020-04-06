@@ -7,6 +7,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { PokemonTextComponent } from './pokemon-text/pokemon-text.component';
 import { RedBorderDirective } from './directives/pokemon-card-border.directive';
+import { PokemonService } from './services/pokemon.service';
 
 @NgModule({
 	declarations: [
@@ -26,6 +27,7 @@ import { RedBorderDirective } from './directives/pokemon-card-border.directive';
 		PokemonListComponent,
 		PaginationComponent,
 		PokemonTextComponent
-	]
+	],
+	providers: [PokemonService]
 })
 export class PokemonModule {}
