@@ -4,12 +4,12 @@
 
 <div *ngIf="!textView" class="pokList">
   <ng-container *ngFor="let pokemon of pokemons">
-    <app-pokemon-card class="pokCard" [pokemon]="pokemon" (onChanged)="onChanged($event)"></app-pokemon-card>
+    <app-pokemon-card class="pokCard" [pokemon]="pokemon" (change)="onChanged($event)"></app-pokemon-card>
   </ng-container>
 </div>
 
 <div *ngIf="textView">
   <ng-container *ngFor="let pokemon of pokemons" class="pokText">
-      <app-pokemon-text [pokemon]="pokemon" (onChanged)="onChanged($event)"></app-pokemon-text>
+      <app-pokemon-text [pokemon]="pokemon" (change)="onChanged($event)"></app-pokemon-text>
   </ng-container>
 </div>
