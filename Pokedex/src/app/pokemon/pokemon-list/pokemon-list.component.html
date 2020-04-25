@@ -1,0 +1,15 @@
+<div>
+  <button type="button" class="btn btn-primary switchBtn" (click)="switchView()">Switch the view</button>
+</div>
+
+<div *ngIf="!textView" class="pokList">
+  <ng-container *ngFor="let pokemon of pokemons">
+    <app-pokemon-card class="pokCard" [pokemon]="pokemon"></app-pokemon-card>
+  </ng-container>
+</div>
+
+<div *ngIf="textView">
+  <ng-container *ngFor="let pokemon of pokemons" class="pokText">
+      <app-pokemon-text [pokemon]="pokemon"></app-pokemon-text>
+  </ng-container>
+</div>

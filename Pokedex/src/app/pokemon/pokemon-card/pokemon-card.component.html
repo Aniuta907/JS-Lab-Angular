@@ -1,0 +1,13 @@
+<div [appRedBorder]="pokemon.damage" class="pokCard text-center">
+    <img src="../../../assets/images/{{pokemon.id}}.png" class="pokImg" alt="{{pokemon.name}}">
+    <div class="card card-block text-center">
+        <h5 class="pokText">name: {{pokemon.name}}</h5>
+        <p class="pokText">id: {{pokemon.id}}</p>
+        <p class="pokText">damage: {{pokemon.damage}}</p>
+    </div>
+    <div class="card card-block text-center">
+        <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
+          {{ caught ? "Release" : "Catch" }}
+        </button>
+      </div>
+</div>
