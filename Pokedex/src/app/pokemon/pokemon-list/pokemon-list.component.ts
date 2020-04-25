@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface Pokemon {
 	name: string;
 	id: number;
 	damage: number;
+	isCaught?: boolean;
 }
 
 @Component({
@@ -83,5 +84,14 @@ export class PokemonListComponent implements OnInit {
 
 	switchView(): void {
 		this.textView = !this.textView;
+	}
+
+	onChanged(pokemon: Pokemon) {
+		pokemon.isCaught = !pokemon.isCaught;
+		if (pokemon.isCaught) {
+			console.log('Pokemon ' + pokemon.name + ' is caught');
+		} else {
+			console.log('Pokemon ' + pokemon.name + ' is free');
+		}
 	}
 }
