@@ -7,16 +7,12 @@ import { Pokemon, PokemonService } from '../services/pokemon.service';
 	templateUrl: './pokemon-list.component.html',
 	styleUrls: [ './pokemon-list.component.scss' ]
 })
-
 export class PokemonListComponent implements OnInit {
 	textView = false;
 
-	public pokemonService;
 	public pokemons;
 
-	constructor(PokemonService: PokemonService) {
-		this.pokemonService = PokemonService;
-	}
+	constructor(private pokemonService: PokemonService) {}
 
 	ngOnInit(): void {
 		this.pokemons = this.pokemonService.getAll();
@@ -26,9 +22,8 @@ export class PokemonListComponent implements OnInit {
 		this.textView = !this.textView;
 	}
 
-	searchPokemon() {
-	}
-	
+	searchPokemon() {}
+
 	onChanged(pokemon: Pokemon) {
 		pokemon.isCaught = !pokemon.isCaught;
 		if (pokemon.isCaught) {
