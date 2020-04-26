@@ -1,6 +1,14 @@
 <div>
     <form class="form-inline">
         <input class="form-control pokemonForm" type="text" placeholder="Which pokemon do you want to find?" [(ngModel)]="pokemonName"[ngModelOptions]="{standalone: true}"/>
-        <button type="button" class="btn btn-primary searchBtn" (click)="searchPokemon()">Search</button>
+        <button 
+            type="button" 
+            class="btn btn-primary searchBtn" 
+            (click)="searchPokemon()"
+            [routerLink]="['/']"
+            [queryParams]="{showSearchResults: true}"
+        >
+            Search
+        </button>
     </form>
 </div>
