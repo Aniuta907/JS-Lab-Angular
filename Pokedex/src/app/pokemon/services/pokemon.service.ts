@@ -10,7 +10,6 @@ export interface Pokemon {
 @Injectable({
 	providedIn: 'root'
 })
-
 export class PokemonService {
 	pokemons: Pokemon[] = [
 		{
@@ -87,5 +86,10 @@ export class PokemonService {
 
 	public getByID(id: number): Pokemon {
 		return this.pokemons.find((pokemon: Pokemon) => pokemon.id === id);
+	}
+
+	filterByName(pokName: string): Pokemon[] {
+		console.log(pokName);
+		return this.pokemons.filter((pokemon: Pokemon) => pokemon.name.indexOf(pokName) !== -1);
 	}
 }

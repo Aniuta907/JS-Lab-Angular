@@ -22,8 +22,6 @@ export class PokemonListComponent implements OnInit {
 		this.textView = !this.textView;
 	}
 
-	searchPokemon() {}
-
 	onChanged(pokemon: Pokemon) {
 		pokemon.isCaught = !pokemon.isCaught;
 		if (pokemon.isCaught) {
@@ -31,5 +29,9 @@ export class PokemonListComponent implements OnInit {
 		} else {
 			console.log('Pokemon ' + pokemon.name + ' is free');
 		}
+	}
+
+	filterPokemons(name: string): void {
+		this.pokemons = this.pokemonService.filterByName(name);
 	}
 }
