@@ -85,7 +85,7 @@ export class PokemonService {
 		return this.pokemons.filter((pokemon) => pokemon.name === name);
 	}
 
-	public getByID(id: number) {
-		return this.pokemons.find((pokemon) => pokemon.id === id);
+	public getByID(id: number): Pokemon {
+		return this.pokemons.find((pokemon: Pokemon) => pokemon.id === id);
 	}
 }

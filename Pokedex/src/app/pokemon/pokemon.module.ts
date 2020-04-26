@@ -8,7 +8,7 @@ import { PokemonTextComponent } from './pokemon-text/pokemon-text.component';
 import { RedBorderDirective } from './directives/pokemon-card-border.directive';
 import { PokemonService } from './services/pokemon.service';
 import { SearchBarComponent } from './search-bar/search-bar.component';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
 	declarations: [
