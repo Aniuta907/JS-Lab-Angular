@@ -1,5 +1,5 @@
-<div [routerLink]="['/pokemons', pokemon.id]" [appRedBorder]="pokemon.damage" class="pokCard">
-    <p>name: {{pokemon.name}}, id: {{pokemon.id}}, damage: {{pokemon.damage}}</p>
+<div [appRedBorder]="pokemon.damage" class="pokCard">
+    <p [routerLink]="['/pokemons', pokemon.id]">name: {{pokemon.name}}, id: {{pokemon.id}}, damage: {{pokemon.damage}}</p>
     <div>
         <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
           {{ pokemon.isCaught ? "Release" : "Catch" }}
