@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { PokemonListComponent } from './pokemon/pokemon-list/pokemon-list.component';
+import { CoreModule } from './core/core.module';
 
 const appRoutes: Routes = [
   { path: 'main', component: PokemonListComponent }
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    PokemonModule
+    PokemonModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

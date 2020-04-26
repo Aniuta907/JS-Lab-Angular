@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { PokemonPageComponent } from './pokemon-page/pokemon-page.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
@@ -13,7 +12,6 @@ import {RouterModule} from '@angular/router';
 
 @NgModule({
 	declarations: [
-		HeaderComponent,
 		PokemonCardComponent,
 		PokemonPageComponent,
 		PokemonListComponent,
@@ -25,7 +23,6 @@ import {RouterModule} from '@angular/router';
 	imports: [ CommonModule, RouterModule ],
 	exports: [
 		PokemonPageComponent,
-		HeaderComponent,
 		PokemonCardComponent,
 		PokemonListComponent,
 		PaginationComponent,
