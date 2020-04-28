@@ -1,2 +1,17 @@
-<h5>name: {{pokemon.name}}</h5>
-<button [routerLink]="['/pokemons', pokemon.id]">Cancel</button>
+<div class="card-deck-wrapper pokDeckWr">
+    <div class="card-deck cardPok">
+        <div class="divImg">
+            <img src="../../../assets/images/{{pokemon.id}}.png" class="pokiImg" alt="Pok-img" />
+        </div>
+        <div class="card divAll">
+            <div class="card divInf">
+                <p class="pokText">Editing form</p>
+                <p class="pokText">Name: {{pokemon.name}}</p>
+                <p class="pokText">Damage: {{pokemon.damage}}</p>
+                <p class="pokText">Birthdate: {{pokemon.birthdate}}</p>
+            </div>
+            <button class="btn btn-primary catchBtn" [routerLink]="['/pokemons', pokemon.id]">Cancel</button>
+            <button class="btn btn-primary saveBtn">Save</button>
+        </div>
+    </div>
+</div>
