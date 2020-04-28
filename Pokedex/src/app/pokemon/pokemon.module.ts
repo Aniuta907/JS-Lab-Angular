@@ -11,6 +11,7 @@ import { RedBorderDirective } from './directives/pokemon-card-border.directive';
 import { PokemonService } from './services/pokemon.service';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { RouterModule } from '@angular/router';
+import { EditFormComponent } from './edit-form/edit-form.component';
 
 @NgModule({
 	declarations: [
@@ -20,21 +21,19 @@ import { RouterModule } from '@angular/router';
 		PaginationComponent,
 		PokemonTextComponent,
 		RedBorderDirective,
+		EditFormComponent,
 		SearchBarComponent
 	],
-	imports: [ 
-		CommonModule, 
-		RouterModule, 
-		FormsModule 
-	],
+	imports: [ CommonModule, RouterModule, FormsModule ],
 	exports: [
 		PokemonPageComponent,
 		PokemonCardComponent,
 		PokemonListComponent,
 		PaginationComponent,
 		PokemonTextComponent,
+		EditFormComponent,
 		SearchBarComponent
 	],
-	providers: [PokemonService]
+	providers: [ PokemonService ]
 })
 export class PokemonModule {}

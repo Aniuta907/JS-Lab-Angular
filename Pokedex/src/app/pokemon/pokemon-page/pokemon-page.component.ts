@@ -20,7 +20,8 @@ export class PokemonPageComponent implements OnInit {
 	ngOnInit(): void { 
 		this.route.paramMap.subscribe(params => {
 			this.pokemon = this.pokemonService.getByID(+params.get('pokemonId'));
-	  });}
+	  });
+	}
 
 	catchPokemon() {
 		this.onChanged.emit(this.pokemon);
