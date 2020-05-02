@@ -17,11 +17,11 @@ export class SearchBarComponent implements OnInit {
 	ngOnInit(): void {
 		this.route.queryParams.subscribe((params: Params) => {
 			this.showSearchResults = !!params.showSearchResults;
-    });
+		});
 
-    this.route.fragment.subscribe(fragment =>{
-        console.log(fragment);
-    })
+		this.route.fragment.subscribe((fragment) => {
+			console.log('meow ', fragment);
+		});
 	}
 
 	showResFunc() {
@@ -34,7 +34,7 @@ export class SearchBarComponent implements OnInit {
 	}
 
 	searchPokemon(): void {
-    this.showResFunc();
+		this.showResFunc();
 		this.onChanged.emit(this.pokemonName);
 	}
 }

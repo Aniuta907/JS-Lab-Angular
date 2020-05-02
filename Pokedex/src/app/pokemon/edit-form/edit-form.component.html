@@ -10,8 +10,8 @@
                 <p class="pokText">Damage: {{pokemon.damage}}</p>
                 <p class="pokText">Birthdate: {{pokemon.birthdate}}</p>
             </div>
-            <button class="btn btn-primary catchBtn" [routerLink]="['/pokemons', pokemon.id]">Cancel</button>
-            <button class="btn btn-primary saveBtn">Save</button>
+            <button class="btn btn-primary catchBtn" (click)="cancel()" [routerLink]="['/pokemons', pokemon.id]">Cancel</button>
+            <button class="btn btn-primary saveBtn" (click)="save()" [routerLink]="['/pokemons', pokemon.id]">Save</button>
         </div>
     </div>
 </div>
