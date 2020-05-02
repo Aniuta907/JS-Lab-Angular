@@ -20,6 +20,7 @@ export class EditFormComponent implements OnInit, ComponentCanDeactivate {
 
 	save() {
 		this.isCanceled = false;
+		this.pokemonService.update(this.pokemon);
 	}
 
 	canDeactivate(): boolean | Observable<boolean> {
@@ -34,7 +35,10 @@ export class EditFormComponent implements OnInit, ComponentCanDeactivate {
 
 	ngOnInit(): void {
 		this.route.paramMap.subscribe((params) => {
-			this.pokemon = this.pokemonService.getByID(+params.get('pokemonId'));
+			const pokemon = this.pokemonService.getByID(+params.get('pokemonId'));
+			this.pokemon = {
+				...pokemon
+			};
 		});
 	}
 }

@@ -104,4 +104,13 @@ export class PokemonService {
 	filterByName(pokName: string): Pokemon[] {
 		return this.pokemons.filter((pokemon: Pokemon) => pokemon.name.indexOf(pokName) !== -1);
 	}
+
+	update(pokemon: Pokemon): void {
+		this.pokemons = this.pokemons.map((pok) => {
+			if (pok.id === pokemon.id) {
+				return pokemon;
+			}
+			return pok;
+		});
+	}
 }

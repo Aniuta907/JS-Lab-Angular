@@ -3,32 +3,32 @@
 }
 
 .pokiImg {
-    width: 300px;
+	width: 300px;
 }
 
 .divImg {
-    min-height: 500px;
-    max-height: 500px;
+	min-height: 500px;
+	max-height: 500px;
 	width: 350px;
 	outline: 2px solid Aquamarine;
-    padding-top: 30px;
-    padding-left: 15px;
-    margin-top: 20px;
+	padding-top: 30px;
+	padding-left: 15px;
+	margin-top: 20px;
 }
 
 .divAll {
-    max-width: 800px;
-    min-height: 500px;
+	max-width: 800px;
+	min-height: 500px;
 	align-items: center;
 	vertical-align: middle;
-    margin-top: 20px;
-    margin-left: 50px;
+	margin-top: 20px;
+	margin-left: 50px;
 	padding-top: 20px;
 }
 
 .divName {
-    width: 400px;
-    max-height: 70px;
+	width: 400px;
+	max-height: 70px;
 	align-items: center;
 	vertical-align: middle;
 	margin-top: 5px;
@@ -36,8 +36,8 @@
 }
 
 .divInf {
-    width: 400px;
-    max-height: 200px;
+	width: 400px;
+	max-height: 600px;
 	align-items: center;
 	vertical-align: middle;
 	margin-top: 20px;
@@ -48,16 +48,20 @@
 	padding-left: 3%;
 }
 
-.catchBtn {
-    margin-top: 40px;
-    width: 150px;
-    height: 50px;
+.cancelBtn {
+	width: 150px;
+	height: 50px;
 	background-color: rgb(111, 223, 186);
 	border: rgb(111, 223, 186);
+	margin-right: 20px;
 }
 
 .saveBtn {
-    margin-top: 20px;
-    width: 150px;
-    height: 50px;
+	width: 150px;
+	height: 50px;
+}
+
+.buttons {
+	display: inline-block;
+	margin-top: 20px;
 }
