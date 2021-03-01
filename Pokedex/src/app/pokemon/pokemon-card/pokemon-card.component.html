@@ -1,5 +1,5 @@
 <div [appRedBorder]="pokemon.damage" class="pokCard text-center">
-    <img src="../../../assets/images/{{pokemon.id}}.png" class="pokImg" alt="{{pokemon.name}}">
+    <img [routerLink]="['/pokemons', pokemon.id]" src="../../../assets/images/{{pokemon.id}}.png" class="pokImg" alt="{{pokemon.name}}">
     <div class="card card-block text-center">
         <h5 class="pokText">name: {{pokemon.name}}</h5>
         <p class="pokText">id: {{pokemon.id}}</p>
@@ -9,5 +9,7 @@
         <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
           {{ pokemon.isCaught ? "Release" : "Catch" }}
         </button>
+        <button class="btn btn-primary editBtn">Edit</button>
       </div>
 </div>
+
