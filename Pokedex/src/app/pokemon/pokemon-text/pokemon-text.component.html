@@ -4,6 +4,6 @@
         <button class="btn btn-primary catchBtn" (click)="catchPokemon()">
           {{ pokemon.isCaught ? "Release" : "Catch" }}
         </button>
-        <button class="btn btn-primary editBtn">Edit</button>
+        <button [routerLink]="['/edit', pokemon.id]" class="btn btn-primary editBtn">Edit</button>
       </div>
 </div>

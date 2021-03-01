@@ -1,0 +1,28 @@
+<div class="card-deck-wrapper pokDeckWr">
+    <div class="card-deck cardPok">
+        <div class="divImg">
+            <img src="../../../assets/images/{{pokemon.id}}.png" class="pokiImg" alt="Pok-img" />
+        </div>
+        <div class="card divAll">
+            <div class="card divInf">
+                <p class="pokText">Editing form</p>
+                <div class="form-group">
+                    <p class="pokText">Name</p>
+                    <input type="text" class="form-control" [(ngModel)]="pokemon.name" name="name">
+                </div>
+                <div class="form-group">
+                    <p class="pokText">Damage</p>
+                    <input type="text" class="form-control" [(ngModel)]="pokemon.damage" name="damage">
+                </div>
+                <div class="form-group">
+                    <p class="pokText">Birthdate</p>
+                    <input type="date" class="form-control" [(ngModel)]="pokemon.birthdate" name="birthdate">
+                </div>
+            </div>
+            <div class="buttons">
+            <button class="btn btn-primary cancelBtn" (click)="cancel()" [routerLink]="['/pokemons', pokemon.id]">Cancel</button>
+            <button class="btn btn-primary saveBtn" (click)="save()" [routerLink]="['/pokemons', pokemon.id]">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

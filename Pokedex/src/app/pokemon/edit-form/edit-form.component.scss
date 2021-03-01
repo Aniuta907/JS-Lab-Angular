@@ -37,7 +37,7 @@
 
 .divInf {
 	width: 400px;
-	max-height: 200px;
+	max-height: 600px;
 	align-items: center;
 	vertical-align: middle;
 	margin-top: 20px;
@@ -48,7 +48,7 @@
 	padding-left: 3%;
 }
 
-.catchBtn {
+.cancelBtn {
 	width: 150px;
 	height: 50px;
 	background-color: rgb(111, 223, 186);
@@ -56,10 +56,10 @@
 	margin-right: 20px;
 }
 
-.editBtn {
+.saveBtn {
 	width: 150px;
-	height: 50px;
-	background-color: #DB7093;
+    height: 50px;
+    background-color: #DB7093;
     border: #DB7093;
 }
 
